@@ -15,7 +15,7 @@ services:
     networks:
       - mired
     volumes:
-      - /php:/var/www/html
+      - /home/public:/var/www/html
     ports:
       - "80:80"
 

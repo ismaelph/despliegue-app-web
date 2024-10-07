@@ -83,10 +83,10 @@ vagrant@debian12:/php$ ip a | grep "eth1"
 
 #### 7. Resultado de phpinfo
 
-![ejercicio php](phpadmin.png)
+![ejercicio php](img/phpadmin.png)
 
-![entrar en base de datos](basededatos.png)
+![entrar en base de datos](img/basededatos.png)
 
 #### 7. Resultado de php my admin
 
-![ejercicio phpapache](phpapache.png)
+![ejercicio phpapache](img/phpapache.png)

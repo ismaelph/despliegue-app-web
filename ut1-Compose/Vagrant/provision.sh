@@ -21,58 +21,20 @@ docker pull php:apache
 
 docker pull phpmyadmin
 
-sudo mkdir contenedores
+sudo -u vagrant mkdir $HOME/contenedores
 
-cd contenedores
+sudo -u vagrant cd $HOME/contenedores
 
-sudo touch docker-compose.yml
+cp /vagrant/docker-compose.yml .
 
-sudo cat << 'EOF' > docker-compose.yml
-	services:
-  mariadb:
-    container_name: mariadb_container
-    image: mariadb
-    networks:
-      - mired
-    environment:
-      - MARIADB_ROOT_PASSWORD=1234
-      - MARIADB_USER=pepe
-      - MARIADB_PASSWORD=despliegue
+chown -R vagrant:vagrant docker-compose.yml
 
-  php:
-    container_name: php_contenedor
-    image: php:apache
-    networks:
-      - mired
-    volumes:
-      - /php:/var/www/html
-    ports:
-      - "80:80"
+sudo -u vagrant docker compose up -d
 
-  phpmyadmin:
-    container_name: phpmyadmin_container
-    image: phpmyadmin
-    networks:
-      - mired
-    environment:
-      - PMA_HOST=mariadb_container
-    ports:
-      - "8080:80"
+sudo -u vagrant mkdir $HOME/public
 
-networks:
-  mired:
-    external: true
-    name: mired
-EOF
-
-docker compose up -d
-
-cd /
-
-sudo mkdir php
-
-cd php
-
-sudo echo "<?php phpinfo(); ?>" > info.php
+cd public
 
 
+#el bash -c ejecuta el comando completo como el usuario vagrant, incluyendo la redirección.
+sudo -u vagrant bash -c echo "<?php phpinfo(); ?>" > $HOME/public/info.php
