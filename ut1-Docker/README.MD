@@ -17,7 +17,7 @@ En esta práctica vamos a crear tres microservicios en Docker que se conectarán
 #### 1. Crear una red interna para la comunicación entre los contenedores
 
 ```bash
-docker network create ejercicio
+docker network create mired
 ```
 
 #### 2. Descargar una imagen
