@@ -39,8 +39,45 @@ mariadb      latest    980042c20069   4 weeks ago   407MB
 
 #### 4. Crear los contenedores
 
+* docker-compose.yml
+
 ```bash
-[enlace](docker-compose.yml)
+services:
+  mariadb:
+    container_name: mariadb_container
+    image: mariadb
+    networks:
+      - mired
+    environment:
+      - MARIADB_ROOT_PASSWORD=1234
+      - MARIADB_USER=pepe
+      - MARIADB_PASSWORD=despliegue
+
+  php:
+    container_name: php_contenedor
+    image: php:apache
+    networks:
+      - mired
+    volumes:
+      - /php:/var/www/html
+    ports:
+      - "80:80"
+
+  phpmyadmin:
+    container_name: phpmyadmin_container
+    image: phpmyadmin
+    networks:
+      - mired
+    environment:
+      - PMA_HOST=mariadb_container
+    ports:
+      - "8080:80"
+
+networks:
+  mired:
+    external: true
+    name: mired
+
 ```
 
 #### 5. Ver los contenedores que estan arrancados 
