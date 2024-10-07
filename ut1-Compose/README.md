@@ -115,7 +115,7 @@ vagrant@debian12:~/compose$ ip a | grep eth1
 
 #### 7. Resultado de phpinfo
 
-![ejercicio php](img/phpadmin.png)
+![ejercicio php](img/phpmyadmin.png)
 
 ![entrar en base de datos](img/basededatos.png)
 
