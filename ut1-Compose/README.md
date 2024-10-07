@@ -40,12 +40,7 @@ mariadb      latest    980042c20069   4 weeks ago   407MB
 #### 4. Crear los contenedores
 
 ```bash
-vagrant@debian12:~$ docker run -d --net=mired -e MARIADB_ROOT_PASSWORD=1234 -e MARIADB_USER=pepe -e MARIADB_PASSWORD=despliegue --name mariadb_container mariadb             
-328d2174deffdc39093e126eb6eac7833b69c204abb2441a8828599a3950acd9
-vagrant@debian12:~$ docker run -d --name php_contenedor --net=mired -v /php:/var/www/html -p80:80 php:apache
-15287e1a8fa06d3b38c945b851da3e39626aae260eae1471cbaeb84067bfbbfb
-vagrant@debian12:~$ docker run -d --name phpmyadmin_container --net=mired -e PMA_HOST=mariadb_container -p 8080:80 phpmyadmin
-58cd6c8afa120033dd10fe5995e4a2978467789abaa6ab92534b6280762ba3a9
+[enlace](docker-compose.yml)
 ```
 
 #### 5. Ver los contenedores que estan arrancados 
@@ -75,9 +70,9 @@ phpinfo();
 #### 6. Ver la ip de nuestra maquina virtual
 
 ```bash
-vagrant@debian12:/php$ ip a | grep "eth1"
+vagrant@debian12:~/compose$ ip a | grep eth1
 3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    inet 192.168.1.141/24 brd 192.168.1.255 scope global dynamic eth1
+    inet 192.168.60.106/24 brd 192.168.60.255 scope global dynamic eth1
 ```
 
 
@@ -89,4 +84,4 @@ vagrant@debian12:/php$ ip a | grep "eth1"
 
 #### 7. Resultado de php my admin
 
-![ejercicio phpapache](phpapache.png)
+![ejercicio phpapache](phpinfo.png)
