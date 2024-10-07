@@ -22,15 +22,11 @@ docker pull phpmyadmin
 
 docker run -d --net=mired -e MARIADB_ROOT_PASSWORD=1234 -e MARIADB_USER=pepe -e MARIADB_PASSWORD=despliegue --name mariadb_container mariadb
 
-docker run -d --name php_contenedor --net=mired -v /php:/var/www/html -p80:80 php:apache
+docker run -d --name php_contenedor --net=mired -v /home/public:/var/www/html -p80:80 php:apache
 
 docker run -d --name phpmyadmin_container --net=mired -e PMA_HOST=mariadb_container -p 8080:80 phpmyadmin
 
-cd /
+sudo -u vagrant mkdir $HOME/public
 
-sudo mkdir php
-
-cd php
-
-sudo echo "<?php phpinfo(); ?>" > info.php
+sudo -u vagrant bash -c echo "<?php phpinfo(); ?>" > $HOME/public/info.php
 
