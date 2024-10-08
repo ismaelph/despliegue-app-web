@@ -83,6 +83,10 @@ vagrant@debian12:/php$ ip a | grep "eth1"
 
 #### 7. Resultado de phpinfo
 
+* URLs usadas: 
+    * localhost:80/infp.php o 192.168.1.141:80/info.php
+    * localhost:8080 o 192.168.1.141:8080
+
 ![ejercicio php](img/phpadmin.png)
 
 ![entrar en base de datos](img/basededatos.png)

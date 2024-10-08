@@ -35,6 +35,4 @@ sudo -u vagrant mkdir $HOME/public
 
 cd public
 
-
-#el bash -c ejecuta el comando completo como el usuario vagrant, incluyendo la redirección.
-sudo -u vagrant bash -c echo "<?php phpinfo(); ?>" > $HOME/public/info.php
+echo "<?php phpinfo(); ?>" > /home/public/info.php

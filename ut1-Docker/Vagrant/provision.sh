@@ -28,5 +28,5 @@ docker run -d --name phpmyadmin_container --net=mired -e PMA_HOST=mariadb_contai
 
 sudo -u vagrant mkdir $HOME/public
 
-sudo -u vagrant bash -c echo "<?php phpinfo(); ?>" > $HOME/public/info.php
+echo "<?php phpinfo(); ?>" > /home/public/info.php
 
