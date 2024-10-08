@@ -1,3 +1,4 @@
+
 # **PRACTICA DOCKER CLI**
 
 ### **Pasos a seguir**
@@ -27,7 +28,7 @@ Status: Downloaded newer image for mariadb:latest
 docker.io/library/mariadb:latest
 ```
 
-#### 3. Ver las imagenes descargadas
+#### 3. Ver las imágenes descargadas
 
 ```bash
 vagrant@debian12:~$ docker images
@@ -49,9 +50,9 @@ services:
     networks:
       - mired
     environment:
-      - MARIADB_ROOT_PASSWORD=1234
-      - MARIADB_USER=pepe
-      - MARIADB_PASSWORD=despliegue
+      - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+      - MARIADB_USER=${MARIADB_USER}
+      - MARIADB_PASSWORD=${MARIADB_PASSWORD}
 
   php:
     container_name: php_contenedor
@@ -59,7 +60,7 @@ services:
     networks:
       - mired
     volumes:
-      - /php:/var/www/html
+      - /home/public:/var/www/html
     ports:
       - "80:80"
 
@@ -69,7 +70,7 @@ services:
     networks:
       - mired
     environment:
-      - PMA_HOST=mariadb_container
+      - PMA_HOST=${PMA_HOST}
     ports:
       - "8080:80"
 
@@ -77,10 +78,9 @@ networks:
   mired:
     external: true
     name: mired
-
 ```
 
-#### 5. Ver los contenedores que estan arrancados 
+#### 5. Ver los contenedores que están arrancados 
 
 ```bash
 vagrant@debian12:~$ docker ps
@@ -90,21 +90,19 @@ CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS    
 328d2174deff   mariadb      "docker-entrypoint.s…"   11 minutes ago   Up 11 minutes   3306/tcp               mariadb_container
 ```
 
-#### 6. Crear el archivo php
+#### 6. Crear el archivo PHP
 
 ```bash
 vagrant@debian12:/$ cd /
 vagrant@debian12:/$ sudo mkdir php
 vagrant@debian12:/$ cd php
-vagrant@debian12:/php$ cat
-info.php       .info.php.swp
 vagrant@debian12:/php$ cat info.php
 <?php
 phpinfo();
 ?>
 ```
 
-#### 6. Ver la ip de nuestra maquina virtual
+#### 7. Ver la IP de nuestra máquina virtual
 
 ```bash
 vagrant@debian12:~/compose$ ip a | grep eth1
@@ -112,17 +110,16 @@ vagrant@debian12:~/compose$ ip a | grep eth1
     inet 192.168.60.106/24 brd 192.168.60.255 scope global dynamic eth1
 ```
 
-
-#### 7. Resultado de phpinfo
+#### 8. Resultado de PHPInfo
 
 * URLs usadas: 
-    * localhost:80/infp.php o 192.168.60.106:80/info.php
-    * localhost:8080 o 192.168.60.106:8080
+    * `localhost:80/info.php` o `192.168.60.106:80/info.php`
+    * `localhost:8080` o `192.168.60.106:8080`
 
 ![ejercicio php](img/phpmyadmin.png)
 
 ![entrar en base de datos](img/basededatos.png)
 
-#### 7. Resultado de php my admin
+#### 9. Resultado de phpMyAdmin
 
 ![ejercicio phpapache](img/phpinfo.png)

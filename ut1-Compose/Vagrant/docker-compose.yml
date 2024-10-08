@@ -5,9 +5,9 @@ services:
     networks:
       - mired
     environment:
-      - MARIADB_ROOT_PASSWORD=1234
-      - MARIADB_USER=pepe
-      - MARIADB_PASSWORD=despliegue
+      - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+      - MARIADB_USER=${MARIADB_USER}
+      - MARIADB_PASSWORD=${MARIADB_PASSWORD}
 
   php:
     container_name: php_contenedor
@@ -25,7 +25,7 @@ services:
     networks:
       - mired
     environment:
-      - PMA_HOST=mariadb_container
+      - PMA_HOST=${PMA_HOST}
     ports:
       - "8080:80"
 

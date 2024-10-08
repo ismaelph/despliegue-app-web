@@ -26,6 +26,7 @@ sudo -u vagrant mkdir $HOME/contenedores
 sudo -u vagrant cd $HOME/contenedores
 
 cp /vagrant/docker-compose.yml .
+sudo -u vagrant cp /vagrant/.env .
 
 chown -R vagrant:vagrant docker-compose.yml
 
