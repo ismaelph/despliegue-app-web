@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    networks:
+      - red_proxy
+      - red_monitor
+    ports:
+      - "80:80"
+      - "443:443"
+  php-apache:
+    image: php:apache
+    container_name: apache
+    volumes:
+      - /home/pavon/public:/var/www/html
+    networks:
+      - red_proxy
+      - red_monitor
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: kuma
+    ports:
+      - "3001:3001"
+    networks:
+      - red_monitor
+networks:
+  red_proxy:
+    external: true
+  red_monitor:
+    external: true
+volumes:
+  caddy_data:
+  caddy_config:

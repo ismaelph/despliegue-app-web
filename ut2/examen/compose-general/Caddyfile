@@ -1,0 +1,6 @@
+cosa.redespavon.duckdns.org {
+        reverse_proxy apache:80
+}
+monitor.redespavon.duckdns.org {
+        reverse_proxy kuma:3001
+}

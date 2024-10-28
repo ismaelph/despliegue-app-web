@@ -211,10 +211,10 @@ ISMAEL PAVÓN HUETE
 ```
 
 ## COMO ENTRAR A APACHE
-cosa.redespavon.duckdns.org
+https://cosa.redespavon.duckdns.org
 
 ## COMO ENTRAR A KUMA
-monitor.redespavon.duckdns.org
+https://monitor.redespavon.duckdns.org
 
 ## COMO ENTRAR A LA PAGINA DE ESTADO
 https://monitor.redespavon.duckdns.org/status/observar
