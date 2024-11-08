@@ -38,7 +38,7 @@
 
 2. Crear una carpeta donde se guardará el **.war** del proyecto:
 ```bash
-   -- mkdir aplicaciones
+mkdir aplicaciones
 ```
 3. Crear el contenedor de Tomcat.
    - [compose-tomcat](./docker/tomcat/docker-compose.yml)
