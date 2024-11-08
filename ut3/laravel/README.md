@@ -1,4 +1,4 @@
-# PRÁCTICA JAKARTA
+# PRÁCTICA LARAVEL
 
 ⚠️ IMPORTANTE: https://laravel.ismaelph.duckdns.org/
 
