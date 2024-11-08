@@ -7,7 +7,7 @@ services:
     networks:
       - caddy
     labels:
-      caddy: "tomcat.ismaelph.duckdns.org"
+      caddy: "tomcat.ejemplo.duckdns.org"
       caddy.reverse_proxy: "tomcat:8080"
 networks:
   caddy:

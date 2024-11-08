@@ -1,0 +1,13 @@
+services:
+  laravel:
+    image: laravel
+    container_name: laravel
+    networks:
+      - caddy
+    labels:
+      caddy: "laravel.ejemplo.duckdns.org"
+      caddy.reverse_proxy: "laravel:8081"
+networks:
+  caddy:
+    external: true
+
