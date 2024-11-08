@@ -1,0 +1,18 @@
+services:
+  tomcat:
+    image: tomcat:latest
+    container_name: tomcat
+    volumes:
+      - ./aplicaciones:/usr/local/tomcat/webapps
+    networks:
+      - caddy
+    labels:
+      caddy: "tomcat.ismaelph.duckdns.org"
+      caddy.reverse_proxy: "tomcat:8080"
+networks:
+  caddy:
+    external: true
+
+volumes:
+  tomcat_data: {}
+

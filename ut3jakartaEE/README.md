@@ -1,25 +1,53 @@
-# PRACTICA JAKARTA
+# PRÁCTICA JAKARTA
+
+[Acceder a la aplicación](https://tomcat.ismaelph.duckdns.org/proyect-1.0-SNAPSHOT/)
+
+## Índice
+- [1. Crear una aplicación hecha en JakartaEE](#1-crear-una-aplicación-hecha-en-jakartaee)
+- [2. Levantar un servidor Tomcat que despliegue nuestra aplicación](#2-levantar-un-servidor-tomcat-que-despliegue-nuestra-aplicación)
+- [3. Desplegar la aplicación](#3-desplegar-la-aplicación)
+
+<hr>
 
 ## 1. Crear una aplicación hecha en JakartaEE
 
-1. 📥 **Instalar la aplicación de Tomcat**  
-   - Visita la [página web oficial de Apache Tomcat](https://tomcat.apache.org/download-migration.cgi).
-   - Descarga el archivo `windows.zip`.
-   - Descomprime el archivo y ya tendrás Tomcat listo.
+1. Instalar Tomcat la versión [windows.zip](https://tomcat.apache.org/download-90.cgi)
+2. Abrir el IDE de nuestra preferencia, en mi caso IntelliJ IDEA.
+3. Crear un nuevo proyecto y cambiar los siguientes datos:
+   - **Generators**: Cambiarlo a Jakarta EE.
+   - **Name**: Nombre del proyecto.
+   - **Location**: Donde se guardará el proyecto.
+   - **Template**: Seleccionar *Web application*.
+4. En la siguiente pantalla, seleccionar las dependencias necesarias y asegurarse de tener marcado **Servlet**.
+5. Extender todas las carpetas y verificar que están los archivos **index.jsp** (página principal) y **HelloServlet.java** (página secundaria a la que lleva el enlace).
+6. Configurar el entorno de ejecución:
+   - Abrir el menú de configuraciones (Run > Edit configurations).
+   - Añadir una nueva configuración para Tomcat server: Local.
+     - Asignar un nombre.
+     - En *Before launch*, añadir un Build Artifacts y escoger el **.war**.
+     - (Es posible que falle y no aparezca. Asegurarse de permitir los scripts si Microsoft Defender lo solicita).
+     - Alternativamente, añadir el artifact en la parte de *Server* en *Deployment*.
+   - Una vez configurado, se debería crear una carpeta **target** y al ejecutar se arrancará el proyecto.
 
-2. 📝 **Crear el proyecto**  
-   - Abre el IDE de tu preferencia. En este ejemplo, usaremos IntelliJ IDEA:
-     - Selecciona **New Project**.
-     - Completa los datos del nombre del proyecto y su ubicación.
-     - En **Template**, selecciona **Web Application**.
-     - Cambia **Generator** a **Jakarta EE**.
+<hr>
 
-   - 🔧 **Configuración del servidor Tomcat**:
-     - En la parte superior, haz clic en el ícono de las "4 líneas".
-     - Selecciona **Run** y luego **Edit Configuration**.
-     - Haz clic en el botón `+` y selecciona **Tomcat Server > Local**.
-       - En la opción **Deployment**, agrega una nueva configuración:
-         - Selecciona **Artifact** y elige tu archivo `proyecto.war`.
+## 2. Levantar un servidor Tomcat que despliegue nuestra aplicación
 
-3. 🚀 **Ejecutar el proyecto**
-   - Haz clic en **Run**. Esto debería iniciar el proyecto y abrirlo en el navegador.
+1. Configurar un proxy en el servidor.
+2. Crear una carpeta donde se guardará el **.war** del proyecto:
+   -- mkdir aplicaciones
+3. Crear el contenedor de Tomcat.
+
+<hr>
+
+## 3. Desplegar la aplicación
+
+1. Levantar los dos servidores necesarios.
+2. Añadir el proyecto desde el PC local al servidor:
+   -- scp -i ruta/absoluta/ssh/privada ruta/absoluta/proyecto/proyect-1.0-SNAPSHOT.war usuario@ip_privada_o_dns:/ruta
+
+   Ejemplo:
+   -- scp -i C:/Users/ejemplo/.ssh/id_ed25519 C:/Users/ejemplo/Documents/tomcat/proyect/target/proyect-1.0-SNAPSHOT.war ejemplo@ejemplo.duckdns.org:/home/ejemplo/jakarta/aplicaciones
+
+3. En la carpeta **aplicaciones** se debería crear un archivo sin la extensión **.war**, que es el proyecto descomprimido.
+4. Al acceder a la ruta creada en el Docker Compose seguido de `/proyect-1.0-SNAPSHOT`, deberías poder acceder a la página.

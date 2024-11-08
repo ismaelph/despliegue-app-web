@@ -1,5 +1,4 @@
 version: "3.7"
-
 services:
   caddy:
     container_name: caddy
@@ -11,13 +10,15 @@ services:
       - CADDY_INGRESS_NETWORKS=caddy
     networks:
       - caddy
+      - monitor
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - caddy_data:/data
     restart: unless-stopped
-
 networks:
   caddy:
+    external: true
+  monitor:
     external: true
 
 volumes:
