@@ -35,12 +35,14 @@
 
 1. Configurar un proxy en el servidor.
    - [compose-caddy](./docker/caddy/docker-compose.yml)
-   - [compose-tomcat](./docker/tomcat/docker-compose.yml)
+
 2. Crear una carpeta donde se guardará el **.war** del proyecto:
 ```bash
    -- mkdir aplicaciones
 ```
 3. Crear el contenedor de Tomcat.
+   - [compose-tomcat](./docker/tomcat/docker-compose.yml)
+   
 4. Levantar los 2 contenedores
 
 <hr>
