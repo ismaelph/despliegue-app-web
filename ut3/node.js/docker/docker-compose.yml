@@ -1,0 +1,15 @@
+services:
+  node:
+    container_name: node
+    build:
+      dockerfile: Dockerfile
+      context: .
+    entrypoint: ["node", "server.js", "argumento1", "argumento2"]
+    networks:
+      - caddy
+    labels:
+      caddy: "node.ejemplo.duckdns.org"
+      caddy.reverse_proxy: "node:3000"
+networks:
+  caddy:
+    external: true
