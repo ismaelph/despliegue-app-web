@@ -1,6 +1,6 @@
 # PRÁCTICA LARAVEL
 
-⚠️ IMPORTANTE: https://laravel.ismaelph.duckdns.org/
+⚠️ IMPORTANTE: https://laravel.ismaelweb.duckdns.org/
 
 ## Índice
 - [1. Crear alias](#1-Crear-alias-de-php-y-composer)

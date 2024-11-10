@@ -1,6 +1,6 @@
 # PRÁCTICA JAKARTA
 
-⚠️ IMPORTANTE: https://tomcat.ismaelph.duckdns.org/proyect-1.0-SNAPSHOT
+⚠️ IMPORTANTE: https://tomcat.ismaelweb.duckdns.org/proyect-1.0-SNAPSHOT/
 
 ## Índice
 - [1. Crear una aplicación hecha en JakartaEE](#1-crear-una-aplicación-hecha-en-jakartaee)

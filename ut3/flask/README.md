@@ -1,6 +1,6 @@
 # PRÁCTICA FLASK
 
-⚠️ IMPORTANTE: https://flask.ismaelph.duckdns.org/
+⚠️ IMPORTANTE: https://flask.ismaelweb.duckdns.org/
 
 ## Índice
 - [Creamos los archivos ](#1-creamos-los-archivos)
