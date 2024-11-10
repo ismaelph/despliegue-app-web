@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=app.py
+    command: flask run --host=0.0.0.0
+    labels:
+      caddy: "flask.ejemplo.duckdns.org"
+      caddy.reverse_proxy: "app:5000"
+    volumes:
+      - ./app.py:/app/app.py # Con el volumen lo que cambies en el app se cambiara en el app del contenedor
+    networks:
+      - caddy
+networks:
+  caddy:
+    external: true

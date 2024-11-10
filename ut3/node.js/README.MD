@@ -13,6 +13,8 @@
 
 [server.js](./javascript/server.js)
 
+<hr>
+
 ## 2. Instalacion de node.js
 
 Vamos a crear un alias con node para levantarlo de una forma contenedor sin tener que tener instalado node.js en nuestro servidor
@@ -29,6 +31,8 @@ node npm init
 node npm install express
 ``` 
 
+<hr>
+
 ## Despliegue
 
 Para desplegar la aplicacion de node necesitamos crear la imagen y el contenedor 
@@ -44,4 +48,6 @@ Con este comando crearemos el contenedor
 ```bash
 docker composer up -d
 ```
-PRobar que funciona entrando por la red
+Probar que funciona entrando por la red
+
+<hr>

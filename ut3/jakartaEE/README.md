@@ -57,3 +57,5 @@ mkdir aplicaciones
 
 3. En la carpeta **aplicaciones** se debería aver creado un archivo sin la extensión **.war**, que es el proyecto que tu has pasado pero descomprimido.
 4. Al acceder a la ruta creada en el Docker Compose seguido de `/proyect-1.0-SNAPSHOT`, deberías poder acceder a la página.
+
+<hr>

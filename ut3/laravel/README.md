@@ -59,3 +59,5 @@ docker compose up -d
 ```
 
 - Ya podriamos entrar a laravel a traves del dns que pusimos en el docker-compose 
+
+<hr>
