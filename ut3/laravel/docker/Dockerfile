@@ -8,8 +8,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN composer install
-
 # Abre el puerto 8081 para PHP
 EXPOSE 8081
 
