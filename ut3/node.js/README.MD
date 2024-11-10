@@ -1,6 +1,6 @@
 # PRÁCTICA NODE
 
-⚠️ IMPORTANTE: https://node.ismaelph.duckdns.org/
+⚠️ IMPORTANTE: https://node.ismaelweb.duckdns.org/
 
 ## Índice
 - [Creamos un archivo que lo llamaremos server.js](#1-creamos-un-archivo-que-lo-llamaremos-serverjs)
