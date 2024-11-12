@@ -1,0 +1,635 @@
+   26  clear
+   27  nano Vagrantfile 
+   28  cat Vagrantfile 
+   29  nano Vagrantfile 
+   30  nano Vagrantfile 
+   31  vagrant up 
+   32  vagrant up 
+   33  vagrant up 
+   34  ssh
+   35  ssh ismael@192.168.33.10
+   36  ssh localhost@192.168.33.10
+   37  ssh mavil1@192.168.33.10
+   38  clear 
+   39  vagrant up 
+   40  ssh vagrant@192.168.33.10
+   41  ssh vagrant@192.168.56.1
+   42  clear 
+   43  vagrant ssh main2
+   44  git add .
+   45  git commit -m "24-09-2024 entrada a php con mysql"
+   46  git push 
+   47  clear 
+   48  git add .
+   49  git commit -m"ejercicios nuevos medio echos"
+   50  git push
+   51  vagrant up 
+   52  vagrant ssh vagrant 
+   53  clear 
+   54  vagrant.exe ssh
+   55  vagrant init /generic/debian12
+   56  vagrant up 
+   57  clear 
+   58  vagrant.exe ssh
+   59  vagrant init /generic/debian12
+   60  vagrant up 
+   61  vagrant.exe ssh 
+   62  git add .
+   63  git commit -m"d"
+   64  git push 
+   65  git add .
+   66  git commit -m "b"
+   67  git push 
+   68  git clone https://github.com/ismaelph/dwec-ismael-pavon.git
+   69  ls -l
+   70  cd practica-docker/
+   71  ls
+   72  clear 
+   73  vagrant up 
+   74  vagrant up 
+   75  vagrant.exe ssh
+   76  vagrant up 
+   77  vagrant.exe ssh
+   78  cls
+   79  clear 
+   80  vagrant up 
+   81  vagrant stop 
+   82  vagrant up
+   83  vagrant.exe ssh
+   84  vagrant up
+   85  vagrant up 
+   86  vagrant.exe ssh 
+   87  vagrant.exe ssh 
+   88  vagrant.exe ssh 
+   89  git add .
+   90  git commit -m"m"
+   91  git push 
+   92  git add .
+   93  git add .
+   94  git add .
+   95  git commit -m"m"
+   96  git commit -m "m"
+   97  vagrant up
+   98  vagrant up
+   99  vagrant.exe ssh 
+  100  vagrant up 
+  101  cleaar 
+  102  clear
+  103  vagrant.exe ssh
+  104  vagrant.exe ssh
+  105  git add .
+  106  git add .
+  107  clear 
+  108  clear 
+  109  vagrant.exe ssh
+  110  vagrant.exe ssh
+  111  vagrant up 
+  112  vagrant.exe ssh
+  113  vagrant up 
+  114  vagrant.exe ssh
+  115  vagrant up 
+  116  docker ps
+  117  vagrant.exe ssh
+  118  vagrant.exe ssh
+  119  vagrant up 
+  120  vagrant.exe ssh
+  121  vagrant up 
+  122  vagrant.exe ssh
+  123  vagrant up 
+  124  vagrant up 
+  125  vagrant.exe ssh
+  126  vagrant reload 
+  127  vagrant up 
+  128  vagrant up --provision
+  129  vagrant up 
+  130  vagrant.exe ssh
+  131  vagrant.exe halt
+  132  vagrant up 
+  133  vagrant up --provision
+  134  git clone https://github.com/CatanduYago/ProyectoONG.git
+  135  lsç
+  136  ls
+  137  cd ProyectoONG/
+  138  ls
+  139  clear 
+  140  git pull
+  141  ls
+  142  ls -l
+  143  clear 
+  144  ls
+  145  visual.exe
+  146  git pul
+  147  git pull
+  148  clear 
+  149  git pull
+  150  cd despliegue-app-web/
+  151  git pull
+  152  cd ..
+  153  cd dwe-servidor/
+  154  git pull
+  155  clear 
+  156  ls
+  157  cd ..
+  158  ls
+  159  cd dise-interfaz/
+  160  git pull
+  161  cd ..
+  162  git pull estudios_personales/
+  163  git pull dwec-ismael-pavon/
+  164  cd dwec-ismael-pavon/
+  165  git pull
+  166  cd ,,
+  167  lls
+  168  ls
+  169  cd ..
+  170  ls
+  171  cd estudios_personales/
+  172  git pull
+  173  ls
+  174  clear 
+  175  cd ..
+  176  ls 
+  177  cd despliegue-app-web/
+  178  ls
+  179  dc datos_varios/
+  180  cd datos_varios/
+  181  ls
+  182  clear 
+  183  ls
+  184  cd ..
+  185  ls
+  186  mkdir dockerfiles
+  187  cd dockerfiles/
+  188  ls
+  189  nano README.nd
+  190  nano README.md
+  191  cat README.md 
+  192  clear 
+  193  cd ..
+  194  ls
+  195  git add .
+  196  git commit -m "Creando dockerfile"
+  197  git push
+  198  git add .
+  199  git commit -m "avances con el dockerfile"
+  200  git push 
+  201  vagrant up 
+  202  vagrant.exe ssh
+  203  nano archivo.txt 
+  204  touch archivo.txt 
+  205  ls
+  206  vagrant.exe ssh
+  207  vagrant.exe ssh
+  208  git add .
+  209  git commit -m "m"
+  210  git push
+  211  git pull
+  212  vagrant upç
+  213  git add .
+  214  git commit -m "los comienzos"
+  215  git push 
+  216  vagrant up 
+  217  vagrant.exe ssh 
+  218  git add .
+  219  git commit -m "los comienzos"
+  220  git push 
+  221  git pull
+  222  git add .
+  223  git commit -m "los comienzos"
+  224  git push 
+  225  cd ..
+  226  ls
+  227  cd dwe-servidor/
+  228  git add .
+  229  git commit -m "Readme"
+  230  git push 
+  231  clear 
+  232  cd ..
+  233  ls 
+  234  cd estudios_personales/
+  235  git add .
+  236  git commit -m "push"
+  237  git push 
+  238  git pull
+  239  git pull
+  240  clear 
+  241  git pull
+  242  git add .
+  243  git commit -m "imagen de patas"
+  244  git pish 
+  245  git push
+  246  git pull
+  247  git add .
+  248  git commit -m "imagen de patas"
+  249  git pull
+  250  git push
+  251  git push
+  252  git pull
+  253  git pull
+  254  git add .ç
+  255  git add .
+  256  git commit -m "patas"
+  257  git push
+  258  git pull
+  259  git pull
+  260  git pull
+  261  git pull
+  262  git clone https://github.com/CatanduYago/ProyectoONG.git
+  263  git pull
+  264  git pull
+  265  git add .
+  266  git commit -m "minicambio en el css"
+  267  git push 
+  268  git pull
+  269  git add .
+  270  git commit "buenas"
+  271  git commit -m "buenas"
+  272  git push 
+  273  git pull
+  274  git pull
+  275  git pull
+  276  ls
+  277  git clone https://github.com/CatanduYago/ProyectoONG.git
+  278  cd ProyectoONG/
+  279  ls
+  280  git pull
+  281  git add .
+  282  git commit -m "Update patas-img" 
+  283  git push 
+  284  git add .
+  285  git pull
+  286  git commit -m "cambios en el media de patas" 
+  287  git push 
+  288   cd ..
+  289  git pull
+  290  git add .
+  291  git commit -m "añadir azure"
+  292  git push 
+  293  mkdir recetas-frontend-clase-js
+  294  git pull
+  295  clear 
+  296  git add .
+  297  git commit -m "carpetas ordenadas"
+  298  git push 
+  299  git pull
+  300  git pull
+  301  ssh daw2@ismaelph.duckdns.org
+  302  ssh daw2@ismaelph.duckdns.org
+  303  ssh daw2@ismaelph.duckdns.org
+  304  ssh -i daw2@ismaelph.duckdns.org ismaelph@4.233.106.20
+  305  ssh -i daw2@ismaelph.duckdns.org ismaelph@4.233.106.20
+  306  git add .
+  307  git commit -m "mejoras"
+  308  git push 
+  309  git pull
+  310  git pull
+  311  ssh -ND 9999 ismaelph@4.233.106.20
+  312  ssh -ND 9999 ismaelph@ismaelph.duckdns.org
+  313  ssh -ND 9999 ismaelph@4.233.106.20
+  314  sudo ssh -ND 9999 ismaelph@4.233.106.20
+  315  ssh -ND 9999 ismaelph@4.233.106.20
+  316  ssh -ND 9999 daw2@4.233.106.20
+  317  ssh -ND 9999 daw2@4.233.106.20
+  318  ssh -ND 9999 ismaelph@4.233.106.20
+  319  git pull
+  320  cd ..
+  321  ls
+  322  cd dwec-ismael-pavon/
+  323  git pull
+  324  clear 
+  325  git pull
+  326  git add .
+  327  git commit -m "mejoras"
+  328  git push 
+  329  ls
+  330  git add .
+  331  git pull
+  332  git commit -m "mejoras de media" 
+  333  git push 
+  334  git pull
+  335  git add .
+  336  git commit -m "mejoras"
+  337  git push 
+  338  ssh -i ~/.ssh/id_rsa.pem ismaelph@4.233.106.20
+  339  git pull
+  340  ssh ismaelph@ismaelph.duckdns.org
+  341  git add .
+  342  git commit -m "correo"
+  343  git push 
+  344  git pull
+  345  git add .
+  346  git commit -m "subida del examen acabada"
+  347  git push 
+  348  git add .
+  349  git commit -m "subida del examen con dockerfile"
+  350  git push 
+  351  git pull
+  352  git add .
+  353  git commit -m "modificacion"
+  354  git push 
+  355  git add .
+  356  git commit -m "modificacion"
+  357  git push 
+  358  hit pull
+  359  git pull
+  360  git add .
+  361  git commit -m "modificacion"
+  362  git push 
+  363  git pull
+  364  git pull
+  365  git pull
+  366  git pull
+  367  git pull
+  368  git pull
+  369  git pull
+  370  git add .
+  371  git commit -m "cambio de patas "
+  372  git push 
+  373  git pull
+  374  git add .
+  375  git commit -m "mas ejercicios"
+  376  git push 
+  377  git add .
+  378  git commit -m "commit"
+  379  git push 
+  380  git add .
+  381  git commit -m "Update Readme.md"
+  382  git push 
+  383  git pull
+  384  git pull
+  385  cd ..
+  386  ls
+  387  cd despliegue-app-web/
+  388  git pull
+  389  cd ..
+  390  ls
+  391  cd dwe-servidor/
+  392  git pull
+  393  cd ..
+  394  clear
+  395  open vsc
+  396  git pull
+  397  git add .
+  398  git commit -m "arreglado"
+  399  git push 
+  400  git pull
+  401  git add .
+  402  git add .
+  403  git commit -m "Update README.md"
+  404  git push 
+  405  git pull
+  406  git add .
+  407   cd ..
+  408  cd ..
+  409  git pull
+  410  git add .
+  411  git commit -m "creado el proyecto de recetasApp"
+  412  git push 
+  413  git add .
+  414  git commit -m "environments.ts cambiado"
+  415  git push 
+  416  git add .
+  417  git commit -m "añadido boostrap "
+  418  git push
+  419  clear 
+  420  git add .
+  421  git commit -m "crear carpetas"
+  422  git push
+  423  ls
+  424  cd Documents/github/dwec-ismael-pavon/EJERCICIOS/UT5\ -\ Introducción\ a\ Angular/recteasApp/
+  425  git pull
+  426  clone https://github.com/ismaelph/despliegue-app-web.git
+  427  git clone https://github.com/ismaelph/despliegue-app-web.git
+  428  git clone https://github.com/MarcoGomesr/laravel-validation-en-espanol.git lang
+  429  git pull 
+  430  git add .
+  431  git commit -m" update"
+  432  git push
+  433  ls
+  434  curl -I https://tomcat.ismaelweb.duckdns.org
+  435  curl -s -I https://tomcat.ismaelweb.duckdns.org
+  436  curl -s -I http://tomcat.ismaelweb.duckdns.org
+  437  git pull
+  438  git pull
+  439  git add .
+  440  git commit -m "mas ejercicios echos"
+  441  git push 
+  442  git push 
+  443  git pull
+  444  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org/home/ismaelph/hardfloat-blog.git
+  445  git init
+  446  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org/home/ismaelph/hardfloat-blog.git
+  447  nano index.html 
+  448  git add .
+  449  git commit -m"buenas
+  450  git commit -m "buenas"
+  451  git push 
+  452  ssh ismaelph@ismaelweb.duckdns.org
+  453  git clone https://github.com/ismaelph/ut4.git
+  454  ls
+  455  cd ut4/
+  456  ls
+  457  nano docker-compose.yml
+  458  ls
+  459  mkdir html
+  460  nano html/index.html
+  461  CAT html/index.html 
+  462  ls
+  463  docker compose up -d
+  464  docker compose up -d
+  465  nano docker-compose.yml
+  466  docker network ls
+  467  docker ps
+  468  docker compose  down 
+  469  docker ps -a
+  470  docker ps -a
+  471  ls
+  472  cat docker-compose.yml 
+  473  docker compose up -d
+  474  docker ps
+  475  nano docker-compose.yml 
+  476  docker down 
+  477  docker compose down 
+  478  docker compose up -d
+  479  git status
+  480  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org:/home/ismael/hardfloat-blog.git
+  481  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org:/home/ismael/hardfloat-blog.git
+  482  git remote -v
+  483  git push prod main
+  484  git add .
+  485  git commit -m "prueba"
+  486  git push 
+  487  git push prod main 
+  488  git remote remove prod 
+  489  git remote -v
+  490  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org:22/home/ismael/hardfloat-blog.git
+  491  git remote -v
+  492  ls
+  493  nano README.md 
+  494  git status
+  495  git add .
+  496  git commit -m "."
+  497  git push prod main 
+  498  ls
+  499  cd ..
+  500  rm -rf ut4/
+  501  cd Desktop/
+  502  git clone https://github.com/ismaelph/ut4.git
+  503  cd Postman.lnk 
+  504  cd ..
+  505  ls
+  506  cd Desktop/
+  507  ls
+  508  cd ut4/
+  509  ls
+  510  docker compose up -d
+  511  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org:22/home/ismaelph/hardfloat-blog.git
+  512  git push origin prod
+  513  git push origin prod main
+  514  git add .
+  515  git commit -m "prueba2
+  516  git commit -m "prueba2"
+  517  git push origin prod
+  518  git push origin prod main
+  519  git remote add prod ssh://ismaelph@ismaelweb.duckdns.org:22/home/ismaelph/hardfloat-blog.git
+  520  git push prod main 
+  521  hirtory
+  522  --help
+  523* 
+  524  history 
+  525  history > historial.txt
+
+
+
+
+
+
+
+  324  cat swap_on.sh
+  325  docker ps
+  326  clear
+  327  docker ps
+  328  clear
+  329  docker ps
+  330  clear
+  331  docker ps
+  332  mkdir hardfloat-blog.git
+  333  LS
+  334  ls
+  335  cd hardfloat-blog.git/
+  336  clear
+  337  git init --bare
+  338  ls
+  339  clear
+  340  ls
+  341  cd hardfloat-blog.git/
+  342  vim hooks/post-receive
+  343  cd hardfloat-blog.git/
+  344  ls
+  345  clear
+  346  vim hooks/post-receive
+  347  clear
+  348  ls
+  349  cd hardfloat-blog.git/
+  350  ls
+  351  cd hooks/
+  352  ls
+  353  cd ..
+  354  nano hooks/post-receive
+  355  chmod +x hooks/post-receive
+  356  cd ..
+  357  ls
+  358  cd hardfloat-blog.git/
+  359  ls
+  360  cd branches/
+  361  ls
+  362  cd ..
+  363  ls
+  364  nano description
+  365  cd info/
+  366  ls
+  367  cd ..
+  368  rm hardfloat-blog.git/
+  369  rm -rf hardfloat-blog.git/
+  370  clear
+  371  mkdir hardfloat-blog.git
+  372  cd hardfloat-blog.git/
+  373  git init --bare
+  374  git branch -m master main
+  375  vim hooks/post-receive
+  376  cd hardfloat-blog.git/
+  377  clear
+  378  vim hooks/post-receive
+  379  rm -rf hardfloat-blog.git/
+  380  clear
+  381  clear
+  382  mkdir hardfloat-blog.git
+  383  ćd hardfloat-blog.git/
+  384  cd hardfloat-blog.git/
+  385  git init --bare
+  386  git branch -m master main
+  387  vim hooks/post-receive
+  388  ls
+  389  cd ..
+  390  ls
+  391  rm -rf hardfloat-blog.git/
+  392  mkdir hardfloat-blog.git
+  393  cd hardfloat-blog.git
+  394  git init --bare
+  395  git config --global init.defaultBranch main
+  396  git branch -m master main
+  397  vim hooks/post-receive
+  398  chmod +x hooks/post-receive
+  399  ls
+  400  cd
+  401  ls
+  402  cd hardfloat-blog.git/
+  403  ls
+  404  cd branches/
+  405  ls
+  406  cd
+  407  ls
+  408  rm -rf hardfloat-blog.git/
+  409  ls
+  410  mkdir hardfloat-blog.git
+  411  cd hardfloat-blog.git
+  412  git init --bare
+  413  vim hooks/post-receive
+  414  chmod +x hooks/post-receive
+  415  ls
+  416  cd
+  417  ls
+  418  rm -rf hardfloat-blog.git/
+  419  ls
+  420  clear
+  421  ç
+  422  clear
+  423  lsç
+  424  ls
+  425  mkdir hardfloat-blog.git
+  426  cd hardfloat-blog.git/
+  427  git init --bare
+  428  ls
+  429  git branch -m master main
+  430  ls
+  431  git branch -m master main
+  432  ls
+  433  ls refs/
+  434  ls refs/heads/
+  435  cat refs/heads/
+  436  cd
+  437  rm -rf hardfloat-blog.git/
+  438  clear
+  439  mkdir hardfloat-blog.git
+  440  cd hardfloat-blog.git/
+  441  git init --bare
+  442  git branch -m master main
+  443  vim hooks/post-receive
+  444  chmod +x hooks/post-receive
+  445  cd
+  446  ls
+  447  cd hardfloat-blog
+  448  ls
+  449  docker ps
+  450  nano docker-compose.yml
+  451  history
