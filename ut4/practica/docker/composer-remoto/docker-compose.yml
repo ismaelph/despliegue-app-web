@@ -1,0 +1,14 @@
+services:
+  web:
+    image: httpd:latest
+    container_name: web
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+    networks:
+      - caddy
+    labels:
+      caddy: "ut4.ismaelweb.duckdns.org"
+      caddy.reverse_proxy: "web:80"
+networks:
+  caddy:
+    external: true

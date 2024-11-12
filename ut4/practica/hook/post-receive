@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Aqui ponemos nuestra ruta del servidor
+GIT_DIR=/home/usuario/hardfloat-blog.git 
+GIT_WORK_TREE=/home/usuario/hardfloat-blog 
+
+if [ ! -d $GIT_WORK_TREE ]; then
+        mkdir $GIT_WORK_TREE
+fi
+
+git --git-dir=$GIT_DIR --work-tree=$GIT_WORK_TREE checkout -f main #Aqui la rama que usamos
+cd $GIT_WORK_TREE
+git --git-dir=$GIT_DIR --work-tree=$GIT_WORK_TREE submodule update --init --recursive
+docker compose -f docker-compose.yml down &&
+docker compose -f docker-compose.yml up -d
