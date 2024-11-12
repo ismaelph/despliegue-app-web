@@ -30,6 +30,12 @@
 - [ut3-flask](./ut3/flask/README.md)
 </details>
 
+<details>
+    <summary>UT-4</summary>
+
+- [ut-4-git-bare](./ut4/practica/README.md)
+</details>
+
 ## **Tecnologías Utilizadas**
 
 <table>
