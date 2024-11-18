@@ -5,6 +5,7 @@
 **Curso**: DAW 2  
 **Correo Personal**: pavonhueteismael@gmail.com  
 **Correo Castelar**: dawipavonh@iescastelar.com  
+**Pagina de estado** https://monitor.ismaelweb.duckdns.org/status/luis
 
 ### INDICE
 
