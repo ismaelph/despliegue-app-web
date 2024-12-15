@@ -1,0 +1,46 @@
+services:
+  php-apache:
+    image: php:8.2-apache-bullseye
+    container_name: php-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./apache-security.conf:/etc/apache2/conf-enabled/security.conf
+    restart: unless-stopped
+    command: >
+      /bin/sh -c "apt-get update && a2enmod headers authnz_ldap && apache2-foreground"
+    networks:
+      - mi-red
+
+  ldap:
+    image: osixia/openldap:latest
+    container_name: ldap
+    environment:
+      LDAP_ORGANISATION: "Ejemplo"
+      LDAP_DOMAIN: "ejemplo.com"
+      LDAP_ADMIN_PASSWORD: "admin1234"
+    volumes:
+      - ./ldap-data:/var/lib/ldap
+      - ./ldap-config:/etc/ldap/slapd.d
+    restart: unless-stopped
+    networks:
+      - mi-red
+
+  phpldapadmin:
+    image: osixia/phpldapadmin:latest
+    container_name: phpldapadmin
+    ports:
+      - "80:80"
+    environment:
+      - PHPLDAPADMIN_LDAP_HOSTS=ldap
+      - PHPLDAPADMIN_HTTPS=false
+    restart: unless-stopped
+    depends_on:
+      - ldap
+    networks:
+      - mi-red
+
+networks:
+  mi-red:
+    driver: bridge

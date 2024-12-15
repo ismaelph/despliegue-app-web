@@ -1,0 +1,4 @@
+dn: cn=usuarios,ou=groups,dc=ejemplo,dc=com
+objectClass: posixGroup
+cn: usuarios
+gidNumber: 1000
